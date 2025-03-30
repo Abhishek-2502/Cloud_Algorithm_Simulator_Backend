@@ -14,11 +14,8 @@ The **Cloud Algorithm Simulator - Backend** is a microservices-based system buil
 6. [Response Terms Explained](#response-terms-explained)
 7. [Supported Scheduling Algorithms](#supported-scheduling-algorithms)
 8. [Installation & Setup](#installation--setup)
-9. [Usage](#usage)
-10. [CI/CD Pipeline & Deployment](#cicd-pipeline--deployment)
-11. [Contributing](#contributing)
-12. [Authors](#authors)
-13. [License](#license)
+9. [Authors](#authors)
+10. [License](#license)
 
 ---
 
@@ -126,7 +123,7 @@ These parameters define the **simulation environment**:
 
 ## ⚡ Supported Scheduling Algorithms
 
-### 1️⃣ **Round Robin (RR)**
+### **1. Round Robin (RR)**
 **How it works:**
 - Tasks are **distributed cyclically** across all available VMs.
 - Ensures **equal workload** across VMs.
@@ -140,7 +137,7 @@ These parameters define the **simulation environment**:
 
 ---
 
-### 2️⃣ **First Come First Serve (FCFS)**
+### **2. First Come First Serve (FCFS)**
 **How it works:**
 - Tasks are **executed in the order of arrival**.
 - No task preemption occurs.
@@ -154,7 +151,7 @@ These parameters define the **simulation environment**:
 
 ---
 
-### 3️⃣ **Ant Colony Optimization (ACO)**
+### **3. Ant Colony Optimization (ACO)**
 **How it works:**
 - Uses **swarm intelligence** to find the **optimal task scheduling path**.
 - Inspired by **real-world ant foraging behavior**.
@@ -169,7 +166,7 @@ These parameters define the **simulation environment**:
 
 ---
 
-### 4️⃣ **Genetic Algorithm (GA)**
+### **4. Genetic Algorithm (GA)**
 **How it works:**
 - Mimics **natural selection** to **evolve** an optimal scheduling strategy.
 - Uses **selection, crossover, and mutation** to optimize scheduling.
@@ -183,7 +180,7 @@ These parameters define the **simulation environment**:
 
 ---
 
-### 5️⃣ **Shortest Job First (SJF)**
+### **5. Shortest Job First (SJF)**
 **How it works:**
 - Tasks with the **smallest execution time** are scheduled first.
 - Minimizes overall execution time.
