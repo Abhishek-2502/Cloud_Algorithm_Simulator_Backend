@@ -1,89 +1,49 @@
 package com.example.model;
 
+import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import java.util.List;
 
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class SimulationRequest {
 
+    @Min(value = 1, message = "Number of VMs must be at least 1.")
     private int numVMs;
+
+    @Min(value = 1, message = "Number of Cloudlets must be at least 1.")
     private int numCloudlets;
+
+    @Min(value = 1, message = "Number of Hosts must be at least 1.")
     private int numHosts;
+
+    @NotNull(message = "Hosts configuration cannot be null.")
     private List<HostRequest> hosts;
+
+    @Min(value = 1, message = "VM MIPS must be at least 1.")
     private int vmMips;
+
+    @Min(value = 1, message = "Number of VM PEs must be at least 1.")
+    private int vmPes;
+
+    @Min(value = 1, message = "VM RAM must be at least 1 MB.")
     private int vmRam;
+
+    @Min(value = 1, message = "VM Bandwidth must be at least 1 MB.")
     private int vmBw;
+
+    @Min(value = 1, message = "VM Storage must be at least 1 MB.")
     private int vmSize;
+
+    @NotBlank(message = "Algorithm cannot be empty.")
     private String algorithm;
 
-    // Getters and Setters
-    public int getNumVMs() {
-        return numVMs;
-    }
-
-    public void setNumVMs(int numVMs) {
-        this.numVMs = numVMs;
-    }
-
-    public int getNumCloudlets() {
-        return numCloudlets;
-    }
-
-    public void setNumCloudlets(int numCloudlets) {
-        this.numCloudlets = numCloudlets;
-    }
-
-    public int getNumHosts() {
-        return numHosts;
-    }
-
-    public void setNumHosts(int numHosts) {
-        this.numHosts = numHosts;
-    }
-
-    public List<HostRequest> getHosts() {
-        return hosts;
-    }
-
-    public void setHosts(List<HostRequest> hosts) {
-        this.hosts = hosts;
-    }
-
-    public int getVmMips() {
-        return vmMips;
-    }
-
-    public void setVmMips(int vmMips) {
-        this.vmMips = vmMips;
-    }
-
-    public int getVmRam() {
-        return vmRam;
-    }
-
-    public void setVmRam(int vmRam) {
-        this.vmRam = vmRam;
-    }
-
-    public int getVmBw() {
-        return vmBw;
-    }
-
-    public void setVmBw(int vmBw) {
-        this.vmBw = vmBw;
-    }
-
-    public int getVmSize() {
-        return vmSize;
-    }
-
-    public void setVmSize(int vmSize) {
-        this.vmSize = vmSize;
-    }
-
-    public String getAlgorithm() {
-        return algorithm;
-    }
-
-    public void setAlgorithm(String algorithm) {
-        this.algorithm = algorithm;
-    }
+    @NotNull(message = "Cloudlet configuration cannot be null.")
+    private List<CloudletRequest> cloudlets;
 }
