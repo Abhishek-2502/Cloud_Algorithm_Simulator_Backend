@@ -5,7 +5,7 @@ pipeline {
         DOCKER_IMAGE = 'cloudsim-springboot-app'
         DOCKER_TAG = 'latest'
         CONTAINER_NAME = 'cloudsim-springboot-container'
-        SSH_CREDENTIALS_ID = 'cloudsim-frontend-slave' // Match Jenkins credentials ID
+        SSH_CREDENTIALS_ID = 'cloudsim-backend-slave' // Match Jenkins credentials ID
     }
 
     stages {
