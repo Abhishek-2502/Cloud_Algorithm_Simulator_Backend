@@ -10,19 +10,9 @@ pipeline {
 
     stages {
         stage('Checkout') {
-            steps {
-                script {
-                    echo 'Checking out backend code using SSH...'
-                    checkout([
-                        $class: 'GitSCM',
-                        branches: [[name: 'main']],
-                        userRemoteConfigs: [[
-                            url: 'git@github.com:Abhishek-2502/Cloud_Algorithm_Simulator_Backend.git',
-                            credentialsId: "${SSH_CREDENTIALS_ID}"
-                        ]]
-                    ])
-                }
-            }
+             steps {
+                 checkout scm
+             }
         }
 
         stage('Build Docker Image') {
