@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'cloudsimBackend }
+    agent { label 'cloudsimBackend' }
 
     environment {
         DOCKER_IMAGE = 'cloudsim-springboot-app'
