@@ -17,9 +17,10 @@ The **Cloud Algorithm Simulator - Backend** is a microservices-based system buil
 9. [Authors](#authors)
 10. [License](#license)
 
+
 ---
 
-## ✨ Features
+## Features
 
 ✅ **Cloud Simulation with CloudSim** – Simulates cloud scheduling and resource allocation.  
 ✅ **Microservices-Based Architecture** – Uses **Spring Boot** and **CloudSim** for high scalability.  
@@ -30,7 +31,7 @@ The **Cloud Algorithm Simulator - Backend** is a microservices-based system buil
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Backend:** Spring Boot (Java)
 - **Cloud Simulation:** CloudSim
@@ -42,7 +43,7 @@ The **Cloud Algorithm Simulator - Backend** is a microservices-based system buil
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```plaintext  
 Cloud_Algorithm_Simulator_Backend/  
@@ -71,7 +72,7 @@ Cloud_Algorithm_Simulator_Backend/
 
 ---
 
-## 🌩 Understanding CloudSim
+## Understanding CloudSim
 
 **CloudSim** is a **Java-based simulation toolkit** for modeling, simulating, and analyzing cloud computing systems. It is widely used to evaluate **task scheduling, VM provisioning, and resource allocation strategies**. This project is using Cloudsim 4.0 which is present inside lib folder.
 
@@ -83,7 +84,7 @@ Cloud_Algorithm_Simulator_Backend/
 
 ---
 
-## 📌 Simulation Parameter Terms
+## Simulation Parameter Terms
 
 These parameters define the **simulation environment**:
 
@@ -109,7 +110,7 @@ These parameters define the **simulation environment**:
 
 ---
 
-## 📊 Response Terms Explained
+## Response Terms Explained
 
 - **status** – Indicates if the simulation was successful.
 - **messages** – Logs the **execution status** and chosen algorithm.
@@ -121,7 +122,7 @@ These parameters define the **simulation environment**:
 
 ---
 
-## ⚡ Supported Scheduling Algorithms
+## Supported Scheduling Algorithms
 
 ### **1. Round Robin (RR)**
 **How it works:**
@@ -192,7 +193,7 @@ These parameters define the **simulation environment**:
 **Cons:**  
 ❌ Long-running tasks may experience **starvation**.
 
-## 🚀 Installation & Setup
+## Installation & Setup
 
 ### 1️⃣ Clone the Repository
 
@@ -228,12 +229,12 @@ This will start the backend in a **detached mode (-d)** and expose it on **port 
 
 ---
 
-## 👨‍💻 Authors
+## Authors
 
 - **Abhishek Rajput** - [GitHub](https://github.com/Abhishek-2502)
 
 ---
 
-## 📜 License
+## License
 
 Licensed under the **MIT License**.
