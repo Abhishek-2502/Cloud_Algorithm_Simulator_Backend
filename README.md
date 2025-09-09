@@ -219,7 +219,7 @@ To run the application inside a **Docker container**, follow these steps:
 docker build -t cloudsim-backend .  
 ```  
 
-#### 🚀 **Run the Container**
+#### 🚀 **Run the Container (If not using frontend as frontend docker-compose will run it directly) **
 
 ```bash  
 docker run -d -p 8080:8080 cloudsim-backend  
